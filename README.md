@@ -9,7 +9,7 @@ run it localy:
 `AUTOMAXPROC=true go run main.go`
 
 run it in docker with a CPU quota and go.uber.org/automaxprocs enabled
-`docker run --cpu-quota=200000 -e AUTOMAXPROC=true  -p 8080:8080 antoinebaudrand/expensive-api`
+`docker run --cpu-quota=200000 -e AUTOMAXPROC=true  -p 8080:8080 7felf/expensive-api`
 
 run a benchmark in docker
 `docker run --net=host -v $PWD/benchmark.yml:/benchmark.yml xridge/drill --benchmark /benchmark.yml -s`
